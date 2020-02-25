@@ -1,0 +1,163 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.1.45",
+        "version" : "2.0"
+    },
+    "extensionsUsed" : [
+        "KHR_draco_mesh_compression"
+    ],
+    "extensionsRequired" : [
+        "KHR_draco_mesh_compression"
+    ],
+    "scene" : 0,
+    "scenes" : [
+        {
+            "extras" : {
+                "palette_props" : {
+                    "current_weight_index" : 10,
+                    "weight" : 1,
+                    "weight_5" : 0.5,
+                    "weight_10" : 1,
+                    "weight_2" : 0.25,
+                    "weight_0" : 0,
+                    "weight_1" : 0.125,
+                    "weight_8" : 0.75,
+                    "weight_4" : 0.4000000059604645,
+                    "weight_3" : 0.33329999446868896,
+                    "weight_6" : 0.6000000238418579,
+                    "weight_9" : 0.8999999761581421,
+                    "weight_7" : 0.6665999889373779
+                },
+                "simplify_status" : 0,
+                "NWBusyDrawing" : "",
+                "NWLazySource" : "Emission",
+                "NWLazyTarget" : "Mix Shader",
+                "color_rules" : [
+                    {
+                        "name" : "Camera",
+                        "type" : 4,
+                        "match_object_type" : 8,
+                        "color" : [
+                            1,
+                            0.4426308572292328,
+                            0.2025509774684906
+                        ],
+                        "factor" : 1
+                    },
+                    {
+                        "name" : "Lights",
+                        "color" : [
+                            0.031626924872398376,
+                            0.21581242978572845,
+                            0.5
+                        ],
+                        "type" : 4,
+                        "factor" : 1
+                    },
+                    {
+                        "name" : "Groups",
+                        "type" : 2,
+                        "use_match_regex" : 0
+                    }
+                ],
+                "color_rules_active_index" : 2,
+                "namedlayers" : {
+                    "layers" : [
+                        {
+                            "name" : "Layer01"
+                        },
+                        {
+                            "name" : "Layer02"
+                        },
+                        {
+                            "name" : "Layer03"
+                        },
+                        {
+                            "name" : "Layer04"
+                        },
+                        {
+                            "name" : "Layer05"
+                        },
+                        {
+                            "name" : "Layer06"
+                        },
+                        {
+                            "name" : "Layer07"
+                        },
+                        {
+                            "name" : "Layer08"
+                        },
+                        {
+                            "name" : "Layer09"
+                        },
+                        {
+                            "name" : "Layer10"
+                        },
+                        {
+                            "name" : "Layer11"
+                        },
+                        {
+                            "name" : "Layer12"
+                        },
+                        {
+                            "name" : "Layer13"
+                        },
+                        {
+                            "name" : "Layer14"
+                        },
+                        {
+                            "name" : "Layer15"
+                        },
+                        {
+                            "name" : "Layer16"
+                        },
+                        {
+                            "name" : "Layer17"
+                        },
+                        {
+                            "name" : "Layer18"
+                        },
+                        {
+                            "name" : "Layer19"
+                        },
+                        {
+                            "name" : "Layer20"
+                        }
+                    ],
+                    "use_init" : 0
+                },
+                "ats_settings" : {
+                    "threads_error" : 0,
+                    "prev_engine" : "CYCLES",
+                    "prev_device" : "GPU",
+                    "prev_border" : 0,
+                    "prev_threads" : 1,
+                    "prev_choice" : "256",
+                    "prev_res" : [
+                        1220,
+                        2048
+                    ],
+                    "prev_border_res" : [
+                        0,
+                        0,
+                        1,
+                        1
+                    ],
+                    "prev_actual_tile_size" : [
+                        244,
+                        256
+                    ],
+                    "first_run" : 0,
+                    "num_tiles" : [
+                        5,
+                        8
+                    ]
+                },
+                "screencast_keys_mouse_position" : 0,
+                "screencast_keys_mouse" : 1,
+                "shot_name" : "Vincent."
+            },
+            "name" : "Scene"
+        }
+    ]
+}
