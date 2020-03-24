@@ -11,24 +11,34 @@
     const canvas = document.getElementById('canvas');
     const context = canvas.getContext('2d');
     const captureButton = document.getElementById('capture');
-    function download() {
-    var download = document.getElementById("download");
-    var image = document.getElementById("myCanvas").toDataURL("image/png")
-        .replace("image/png", "image/octet-stream");
-    download.setAttribute("href", image);
-    //download.setAttribute("download","archive.png");
-    }
-
+    var downloadButton = document.querySelector('capture');
+    downloadButton.onclick = download;
     const constraints = {
       video: true,
     };
+    
+    function download() {
+      var blob = new Blob(recordedBlobs, {type: 'video/webm'});
+      var url = window.URL.createObjectURL(blob);
+      var a = document.createElement('a');
+      a.style.display = 'none';
+      a.href = url;
+      a.download = 'test.webm';
+      document.body.appendChild(a);
+      a.click();
+      setTimeout(function() {
+        document.body.removeChild(a);
+        window.URL.revokeObjectURL(url);
+      }, 100);
+    }
 
     captureButton.addEventListener('click', () => {
       // Draw the video frame to the canvas.
-      context.drawImage(player, 0, 0, canvas.width, canvas.height);
-      context.write('<img src="'+img+'"/>');
-            document.write('<img src="'+img+'"/>');
+      context.drawImage(player, 0, 0, canvas.width, canvas.height); 
     });
+
+    window.addEventListener('click', (event) => {
+
 
     // Attach the video stream to the video element and autoplay.
     navigator.mediaDevices.getUserMedia(constraints)
@@ -36,9 +46,5 @@
         player.srcObject = stream;
       });
   </script>
-<a id="download" download="triangle.png">
-<button type="button" onClick="download()">Download</button>
-</a>
-    
-<canvas id="myCanvas" width="720" height="450">Your browser does not support Canvas.</canvas>
+
 </html>
