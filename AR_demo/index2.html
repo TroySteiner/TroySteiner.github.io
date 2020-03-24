@@ -37,9 +37,6 @@
       context.drawImage(player, 0, 0, canvas.width, canvas.height); 
     });
 
-    window.addEventListener('click', (event) => {
-
-
     // Attach the video stream to the video element and autoplay.
     navigator.mediaDevices.getUserMedia(constraints)
       .then((stream) => {
